@@ -1,8 +1,11 @@
+package br.edu.cefsa.ftt.ec.charts;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.chart.XYChart.Series;
 import javafx.stage.Stage;
  
 //Source: https://docs.oracle.com/javafx/2/charts/area-chart.htm
@@ -21,7 +24,7 @@ public class AreaChartSample extends Application {
             new AreaChart<Number,Number>(xAxis,yAxis);       
         ac.setTitle("Temperature Monitoring (in Degrees C)");
  
-        XYChart.Series seriesApril= new XYChart.Series();
+        Series seriesApril = new XYChart.Series();
         seriesApril.setName("April");
         seriesApril.getData().add(new XYChart.Data(0, 4));
         seriesApril.getData().add(new XYChart.Data(3, 10));

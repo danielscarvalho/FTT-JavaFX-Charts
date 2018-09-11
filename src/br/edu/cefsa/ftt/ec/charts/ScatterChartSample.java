@@ -1,3 +1,5 @@
+package br.edu.cefsa.ftt.ec.charts;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
